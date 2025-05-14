@@ -1,0 +1,30 @@
+.button {
+    font-weight: bold;
+    border: none;
+    color: black;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    text-decoration: underline;
+  }
+
+  .sortify-music-btn {
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 10px 20px;
+    width: 12rem;
+    background-color: #f0dcca;
+    color: #3a9f57;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .sortify-music-btn:hover {
+    box-shadow: 0 0 15px #06874f; /* Glowing effect */
+  }
+  

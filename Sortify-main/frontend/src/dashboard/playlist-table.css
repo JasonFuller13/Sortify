@@ -1,0 +1,38 @@
+.card-hover-effect {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 225px;
+}
+
+.card-hover-effect:hover {
+  transform: scale(1.05); /* Adjust the scale value to make it larger */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* This will create a subtle shadow effect */
+  border: 2px solid #d8f3dc; /* Replace with your desired color */
+}
+
+.playlist-card {
+  width: 20%; /* Each card takes up 20% of the container's width */
+}
+
+.custom-col {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-title,
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Adjust the padding for the cards, if necessary, to maintain consistent spacing */
+.row .playlist-card {
+  padding-right: 4px;
+  padding-left: 4px;
+}

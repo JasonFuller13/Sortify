@@ -1,0 +1,109 @@
+.main {
+  background-color: #081c15;
+}
+
+.create-playlist-container {
+  background-color: #081c15;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 0;
+  max-height: 75vh;
+  overflow-y: auto;
+  border-radius: 0.75rem;
+}
+
+.like-dislike-section {
+  text-align: center;
+  min-height: 15vh;
+}
+
+.instructions {
+  font-weight: bold;
+  font-size: 24px;
+  color: #52b788;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  user-select: none;
+}
+
+.playlist-table {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #d8f3dc;
+  table-layout: fixed;
+}
+
+.playlist-table th, .playlist-table td {
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid #000000;
+  padding: .5rem;
+  text-align: left;
+}
+
+.playlist-table th:nth-child(1), .playlist-table td:nth-child(1) {
+  width: 10%;
+}
+
+.playlist-table th:nth-child(2), .playlist-table td:nth-child(2),
+.playlist-table th:nth-child(3), .playlist-table td:nth-child(3) {
+  width: 45%;
+}
+
+.playlist-table th:first-child {
+  width: 0.5rem;
+}
+
+.playlist-table tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+.playlist-table tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+.playlist-table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.playlist-table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.song-row {
+  cursor: pointer;
+  &:hover {
+    background-color: #b7e4c7;
+  }
+}
+
+.table-footer {
+  margin-top: 3rem;
+}
+
+.sortify-music-btn {
+  background-color: #52b788;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: right;
+  opacity: 1;
+  pointer-events: auto;
+
+  &:hover {
+    box-shadow: 0 0 2rem #d8f3dc;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}

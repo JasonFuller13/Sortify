@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#app,
+#app > div {
+  height: 100%;
+}
+
+.sortify-music-btn {
+  background-color: #52b788;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 1rem .5rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: right;
+  opacity: 1;
+  pointer-events: auto;
+
+  &:hover {
+    box-shadow: 0 0 2rem #d8f3dc;
+  }
+}
